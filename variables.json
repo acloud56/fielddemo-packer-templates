@@ -26,7 +26,7 @@
     "ubuntu1910_checksum": "921fd8b271c04aa86a321cc35b40e677f9b85f7903bf2204efb2389b0f0a64c1",
 
     "ubuntu2004_vm_name": "packer-ubuntu2004",
-    "ubuntu2004_iso": "[sc2c02vsan01] iso/ubuntu-18.04.3-server-amd64.iso",
+    "ubuntu2004_iso": "[PW_0145_NP_0024] ISO/ubuntu-18.04.3-live-server-amd64.iso",
     "ubuntu2004_checksum": "caf3fd69c77c439f162e2ba6040e9c320c4ff0d69aad1340a514319a9264df9f",
 
     "windows_2016_vm_name": "packer-windows2016",
