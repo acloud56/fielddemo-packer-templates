@@ -104,7 +104,7 @@
                 " preseed/url={{user `http_server`}}/ubuntu18.cfg<wait>",
                 "<enter>"
             ],
-            "boot_order": "disk,cdrom",
+            "boot_order": "cdrom,disk",
             "cluster": "{{user `vcenter_cluster`}}",
             "convert_to_template": "true",
             "create_snapshot": "false",
