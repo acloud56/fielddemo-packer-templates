@@ -369,14 +369,7 @@
             "scripts": [
                 "{{ template_dir }}/scripts/win_cloudbaseinit.ps1"
             ],
-            "type": "windows-update",
-            "search_criteria": "IsInstalled=0",
-            "filters": [
-                "exclude:$_.Title -like '*Preview*'",
-                 "include:$true"
-             ],
-        "update_limit": 25
-        }
+            }
     ],
     "sensitive-variables": [
         "vcenter_password",
