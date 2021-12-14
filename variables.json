@@ -9,11 +9,6 @@
 
     "buildtime": "{{ env `BUILDTIME`}}",
 
-    "ssh_username": "{{ env `SSHUSER`}}",
-    "ssh_password": "{{ env `SSHPASS`}}",
-
-    "winrm_username": "Administrator",
-    "winrm_password": "{{ env `SSHPASS`}}",
 
     "http_server": "https://raw.githubusercontent.com/VMwareCMBUTMM/fielddemo-packer-templates/master/config",
 
