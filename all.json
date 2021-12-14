@@ -123,7 +123,7 @@
             "notes": "Built by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
             "password": "{{user `vcenter_password`}}",
             "remove_cdrom": false,
-            "ssh_password": "VMWare1!",
+            "ssh_password": "VMware1!",
             "ssh_username": "autotmm",
             "storage": [{
                 "disk_size": "20480",
