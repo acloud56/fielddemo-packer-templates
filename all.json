@@ -253,8 +253,8 @@
             "convert_to_template": "true",
 
             "communicator": "winrm",
-            "winrm_username": "packer",
-            "winrm_password": "packer",
+            "winrm_username": "administrator",
+            "winrm_password": "VMware1!",
             "winrm_timeout": "5m", 
             "winrm_port": 5985,
             "vm_name": "{{ user `windows_2016_vm_name` }}-{{user `buildtime`}}",
