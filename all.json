@@ -114,10 +114,8 @@
             "guest_os_type": "ubuntu64Guest",
             "host": "{{user `vcenter_host`}}",
             "insecure_connection": "true",
-            "iso_checksum": "sha256:{{user `ubuntu1804_checksum`}}",
-            "iso_paths": [
-                "{{user `ubuntu1804_iso`}}"
-            ],
+            "iso_checksum": "6c647b1ab4318e8c560d5748f908e108be654bad1e165f7cf4f3c1fc43995934",
+            "iso_url": "http://releases.ubuntu.com/18.04.6/ubuntu-18.04.6-live-server-amd64.iso",
             "network_adapters": [{
                 "network": "{{user `vcenter_network`}}",
                 "network_card": "vmxnet3"
