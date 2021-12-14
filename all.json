@@ -125,8 +125,8 @@
             "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
             "password": "{{user `vcenter_password`}}",
             "remove_cdrom": false,
-            "ssh_password": "{{user `ssh_password`}}",
-            "ssh_username": "{{user `ssh_username`}}",
+            "ssh_password": "packer",
+            "ssh_username": "packer",
             "storage": [{
                 "disk_size": "20480",
                 "disk_thin_provisioned": true
