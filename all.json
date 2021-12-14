@@ -125,6 +125,7 @@
             "remove_cdrom": false,
             "ssh_password": "VMware1!",
             "ssh_username": "autotmm",
+            "ssh_timeout": "2m",
             "storage": [{
                 "disk_size": "20480",
                 "disk_thin_provisioned": true
