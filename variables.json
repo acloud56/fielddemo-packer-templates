@@ -10,7 +10,7 @@
     "buildtime": "{{ env `BUILDTIME`}}",
 
 
-    "http_server": "https://raw.githubusercontent.com/VMwareCMBUTMM/fielddemo-packer-templates/master/config",
+    "http_server": "https://github.com/acloud56/fielddemo-packer-templates/config",
 
     "ubuntu1804_vm_name": "packer-ubuntu1804",
     "ubuntu1804_iso": "[PW_0145_NP_0024] iso/ubuntu-18.04.3-server-amd64.iso",
