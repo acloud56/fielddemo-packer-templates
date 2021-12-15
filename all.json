@@ -101,7 +101,7 @@
                 " initrd=/install/initrd.gz",
                 " priority=critical",
                 " locale=en_US",
-                " preseed/url={{user `http_server`}}/ubuntu18.cfg<wait>",
+                " preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ubuntu18.cfg<wait>",
                 "<enter>"
             ],
             "boot_order": "disk,cdrom",
@@ -114,6 +114,8 @@
             "guest_os_type": "ubuntu64Guest",
             "host": "{{user `vcenter_host`}}",
             "insecure_connection": "true",
+            "http_directory": "http",
+            "ssh_wait_timeout": "3m",
             "iso_checksum": "6c647b1ab4318e8c560d5748f908e108be654bad1e165f7cf4f3c1fc43995934",
             "iso_url": "http://releases.ubuntu.com/18.04.6/ubuntu-18.04.6-live-server-amd64.iso",
             "network_adapters": [{
