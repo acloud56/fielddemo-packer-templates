@@ -266,13 +266,13 @@
             "disk_controller_type": "pvscsi",
             "storage": [{
                 "disk_size": "61440",
-                "disk_thin_provisioned": true},
+                "disk_thin_provisioned":true},
                         {
                 "disk_size": 40960,
-                "disk_thin_provisioned": true}, 
+                "disk_thin_provisioned":true}, 
                         {
                  "disk_size": 20480,
-                 "disk_thin_provisioned": true}],
+                 "disk_thin_provisioned":true}],
             "iso_paths": [
                 "{{user `windows_2016_iso`}}",
                 "[] /vmimages/tools-isoimages/windows.iso"
