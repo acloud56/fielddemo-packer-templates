@@ -17,3 +17,9 @@ winrm set winrm/config/service/auth '@{Basic="true"}'
 # Reset auto logon count
 # https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-autologon-logoncount#logoncount-known-issue
 Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon' -Name AutoLogonCount -Value 0
+
+# Configure Disks
+new-partition -disknumber 1 -usemaximumsize | format-volume -filesystem NTFS -newfilesystemlabel Data
+get-partition -disknumber X | set-partition -newdriveletter D
+new-partition -disknumber 2 -usemaximumsize | format-volume -filesystem NTFS -newfilesystemlabel PageFile
+get-partition -disknumber X | set-partition -newdriveletter P
