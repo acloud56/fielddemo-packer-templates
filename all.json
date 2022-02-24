@@ -374,7 +374,7 @@
                 "Windows2016"
             ],
             "type": "powershell",
-            "scripts": [
+            "inline": [
                 "{{ template_dir }}/scripts/win_cloudbaseinit.ps1",
                 "Get-Disk -Number 1 | where partitionstyle -eq \"raw\" | Initialize-Disk -PartitionStyle GPT -PassThru | New-Partition -AssignDriveLetter D -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel \"Data\" -Confirm:$false",
                 "Get-Disk -Number 2 | where partitionstyle -eq \"raw\" | Initialize-Disk -PartitionStyle GPT -PassThru | New-Partition -AssignDriveLetter P -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel \"PageFile\" -Confirm:$false"
