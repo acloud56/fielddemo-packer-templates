@@ -375,7 +375,7 @@
             ],
             "type": "powershell",
             "inline": [
-                "Get-Disk -Number 1 | where partitionstyle -eq \"raw\" | Initialize-Disk -PartitionStyle GPT -PassThru | New-Partition -AssignDriveLetter  -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel \"Data\" -Confirm:$false" | Set−Partition −DriveLetter 'F' −NewDriveLetter 'D'",
+                "Get-Disk -Number 1 | where partitionstyle -eq \"raw\" | Initialize-Disk -PartitionStyle GPT -PassThru | New-Partition -AssignDriveLetter  -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel \"Data\" -Confirm:$false | Set−Partition −DriveLetter 'F' −NewDriveLetter 'D'",
                 "Get-Disk -Number 2 | where partitionstyle -eq \"raw\" | Initialize-Disk -PartitionStyle GPT -PassThru | New-Partition -AssignDriveLetter  -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel \"PageFile\" -Confirm:$false | Set−Partition −DriveLetter 'G' −NewDriveLetter 'P' "
                
             ]
