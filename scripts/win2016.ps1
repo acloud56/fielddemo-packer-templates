@@ -19,7 +19,9 @@ winrm set winrm/config/service/auth '@{Basic="true"}'
 Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon' -Name AutoLogonCount -Value 0
 
 # Configure Disks
-new-partition -disknumber 1 -usemaximumsize | format-volume -filesystem NTFS -newfilesystemlabel Data
-get-partition -disknumber X | set-partition -newdriveletter D
-new-partition -disknumber 2 -usemaximumsize | format-volume -filesystem NTFS -newfilesystemlabel PageFile
-get-partition -disknumber X | set-partition -newdriveletter P
+Initialize-Disk -Number 1
+new-partition -disknumber 1 -usemaximumsize | format-volume -filesystem NTFS -newfilesystemlabel "Data"
+get-partition -disknumber 1 | set-partition -newdriveletter D
+Initialize-Disk -Number 2
+new-partition -disknumber 2 -usemaximumsize | format-volume -filesystem NTFS -newfilesystemlabel "PageFile"
+get-partition -disknumber 2 | set-partition -newdriveletter P
