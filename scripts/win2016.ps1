@@ -20,6 +20,5 @@ Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlo
 
 # Configure Disks
 Get-Disk | Where-Object PartitionStyle –Eq 'RAW' | Initialize-Disk
-Start-Sleep -s 15
 new-partition -disknumber 1 -usemaximumsize -newdriveletter D | format-volume -filesystem NTFS -newfilesystemlabel "Data"
 new-partition -disknumber 2 -usemaximumsize -newdriveletter P | format-volume -filesystem NTFS -newfilesystemlabel "PageFile"
