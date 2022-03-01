@@ -25,4 +25,4 @@ if (!(Test-Path P:))
     new-partition -DriveLetter P -DiskNumber 2 -UseMaximumSize
 }
 
-Format-Volume D -Confirm:$false -NewFileSystemLabel "PageFile"
+Format-Volume P -Confirm:$false -NewFileSystemLabel "PageFile"
