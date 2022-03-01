@@ -11,6 +11,8 @@ if ($dvdDrive -and $dvdDrive.DriveLetter -eq "D:")
 #################################################################################
 # Create the D: volume, let it fill the the rest of the disk
 #################################################################################
+Get-Disk | where partitionstyle -eq \"raw\" | Initialize-Disk -PartitionStyle GPT -PassThru
+
 if (!(Test-Path D:))
 {
     new-partition -DriveLetter D -DiskNumber 1 -UseMaximumSize
