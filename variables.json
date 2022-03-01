@@ -28,9 +28,9 @@
     "windows_2016_iso": "[PW_0145_NP_0024] Windows_ISO/SW_DVD9_Win_Server_STD_CORE_2016_64Bit_English_-4_DC_STD_MLF_X21-70526.ISO",
     "windows_2016_checksum": "1ce702a578a3cb1ac3d14873980838590f06d5b7101c5daaccbac9d73f1fb50f",
 
-    "centos7_vm_name": "packer-centos7",
-    "centos7_iso": "[sc2c02vsan01] iso/CentOS-7-x86_64-DVD-2003.iso",
-    "centos7_checksum": "087a5743dc6fd6706d9b961b8147423ddc029451b938364c760d75440eb7be14",
+    "centos7_vm_name": "packer-windows2019",
+    "windows_2019_iso": "[PW_0145_NP_0024] Server2019 Evaluation.iso",
+    "windows_2019_checksum": "087a5743dc6fd6706d9b961b8147423ddc029451b938364c760d75440eb7be14",
 
     "centos8_vm_name": "packer-centos8",
     "centos8_iso": "[sc2c02vsan01] iso/CentOS-8.2.2004-x86_64-dvd1.iso",
